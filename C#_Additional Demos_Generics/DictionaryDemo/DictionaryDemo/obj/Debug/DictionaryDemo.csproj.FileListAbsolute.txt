@@ -1,0 +1,6 @@
+E:\M2 Demos\DictionaryDemo\DictionaryDemo\bin\Debug\DictionaryDemo.exe.config
+E:\M2 Demos\DictionaryDemo\DictionaryDemo\bin\Debug\DictionaryDemo.exe
+E:\M2 Demos\DictionaryDemo\DictionaryDemo\bin\Debug\DictionaryDemo.pdb
+E:\M2 Demos\DictionaryDemo\DictionaryDemo\obj\Debug\DictionaryDemo.csprojResolveAssemblyReference.cache
+E:\M2 Demos\DictionaryDemo\DictionaryDemo\obj\Debug\DictionaryDemo.exe
+E:\M2 Demos\DictionaryDemo\DictionaryDemo\obj\Debug\DictionaryDemo.pdb

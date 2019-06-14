@@ -1,0 +1,6 @@
+E:\M2 Demos\CustomGenericStack_Demo\CustomGenericStack\bin\Debug\CustomGenericStack.exe.config
+E:\M2 Demos\CustomGenericStack_Demo\CustomGenericStack\bin\Debug\CustomGenericStack.exe
+E:\M2 Demos\CustomGenericStack_Demo\CustomGenericStack\bin\Debug\CustomGenericStack.pdb
+E:\M2 Demos\CustomGenericStack_Demo\CustomGenericStack\obj\Debug\CustomGenericStack.csprojResolveAssemblyReference.cache
+E:\M2 Demos\CustomGenericStack_Demo\CustomGenericStack\obj\Debug\CustomGenericStack.exe
+E:\M2 Demos\CustomGenericStack_Demo\CustomGenericStack\obj\Debug\CustomGenericStack.pdb
