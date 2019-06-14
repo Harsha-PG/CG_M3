@@ -1,0 +1,25 @@
+<HTML>
+<HEAD>
+<TITLE> Window Open And Close Tester </TITLE>
+</HEAD>
+<BODY>
+<CENTER>
+<H1> Window.Open And Window.Close </H1>
+<INPUT TYPE="BUTTON" NAME="btnOne" VALUE="Open One">
+<INPUT TYPE="BUTTON" NAME="btnDOne" VALUE="Close One"><p>
+<INPUT TYPE="BUTTON" NAME="btnCloseMe" VALUE="Close Me">
+<SCRIPT LANGUAGE="VBScript">
+Dim objNewWindow
+Sub btnOne_onClick
+  Set objNewWindow = Window.Open("http://www.igate.com/", "myWindowOne", "toolbar=no, menubar=no, location=no, directories=no")
+End Sub    
+Sub btnDOne_onClick
+  objNewWindow.Close
+End Sub
+Sub btnCloseMe_onClick
+  Window.Close
+End Sub
+</SCRIPT>
+</CENTER>
+</BODY>
+</HTML>

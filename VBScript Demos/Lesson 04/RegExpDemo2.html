@@ -1,0 +1,23 @@
+<html>
+<head>
+<meta http-equiv="x-ua-compatible" content="IE=10">
+</head>
+<body>
+<script type="text/vbscript">
+document.write("<b>Example showing testing regular expression </b> <br/>")
+Function myFunction()
+Dim re, targetString
+Set re = New RegExp
+With re
+  .Pattern = "a"
+  .Global = False
+  .IgnoreCase = False
+End With
+targetString = "The rain in Spain falls mainly in the plain"
+
+document.write(re.Test(targetString))
+End Function
+</script>
+<input type="button" onclick="myFunction()" value="Text" />
+</body>
+</html>

@@ -1,0 +1,24 @@
+<html>
+<head>
+<meta http-equiv="x-ua-compatible" content="IE=10">
+</head>
+<body>
+<script type="text/vbscript">
+document.write("<b>Example showing replace function for a regular expression </b> <br/>")
+Function myFunction()
+	Dim objRegEx
+	Set objRegEx = new RegExp
+
+	objRegEx.Global = True   
+	objRegEx.IgnoreCase = True
+	objRegEx.Pattern = "Tea"
+
+	strSearchString = "A cup of Tea and Tea to go with it."
+    strNewString =  objRegEx.Replace(strSearchString,"Coffee")
+
+	document.write(strNewString )
+End Function
+</script>
+<input type="button" onclick="myFunction()" value="Replace" />
+</body>
+</html>

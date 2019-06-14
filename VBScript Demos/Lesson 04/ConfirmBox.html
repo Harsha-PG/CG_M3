@@ -1,0 +1,21 @@
+<HTML>
+<HEAD>
+<TITLE> Window Dialogs </TITLE>
+</HEAD>
+<BODY>
+<CENTER>
+<H1> Window Dialogs </H1>
+<INPUT TYPE="BUTTON" NAME="btnTest" VALUE="Click Me">
+<SCRIPT LANGUAGE="VBScript">
+Sub btnTest_onClick
+Dim retValue
+retValue = Confirm("Press OK or Cancel")
+Alert "Confirm returned " & retValue
+
+retValue = Prompt("Enter a string", "Default String")
+Alert "Confirm returned '" & retValue & "'"
+End Sub    
+</SCRIPT>
+</CENTER>
+</BODY>
+</HTML>

@@ -1,0 +1,23 @@
+<html>
+<body>
+<script type="text/vbscript">
+document.write("<b>Example showing executing regular expression </b> <br/>")
+Function myFunction()
+	Dim re, targetString, colMatch, objMatch
+Set re = New RegExp
+With re
+  .Pattern = "a"
+  .Global = True
+  .IgnoreCase = True
+End With 
+targetString = "The rain in Spain falls mainly in the plain"
+
+Set colMatch = re.Execute(targetString)
+For each objMatch  in colMatch
+  document.Write objMatch.Value & "<br />"
+Next
+End Function
+</script>
+<input type="button" onclick="myFunction()" value="Execute" />
+</body>
+</html>

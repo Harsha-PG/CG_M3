@@ -1,0 +1,24 @@
+<html>
+<body>
+<script language="vbscript" type="text/vbscript">
+ document.write("<b>Example showing validation of email id</b> <br/>")
+  strid = "username@igate.com"
+  Set re = New RegExp
+  With re
+      .Pattern    = "^[\w-\.]{1,}\@([\da-zA-Z-]{1,}\.){1,}[\da-zA-Z-]{2,3}$"
+      .IgnoreCase = False
+      .Global     = False
+  End With
+  
+  ' Test method returns TRUE if a match is found
+  If re.Test( strid ) Then
+      Document.write(strid & " is a valid e-mail address")
+  Else
+      Document.write(strid & " is NOT a valid e-mail address")
+  End If
+  
+  Set re = Nothing
+</script>
+</body>
+</html>
+

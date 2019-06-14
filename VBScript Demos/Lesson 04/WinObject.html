@@ -1,0 +1,30 @@
+<HTML>
+<HEAD>
+<TITLE>Window object</TITLE>
+
+<!—
+This demo uses the Window object
+to navigate to a new URL
+—>
+
+<SCRIPT LANGUAGE="VBScript">
+    Sub cmdNavigate_OnClick
+        Dim MyForm
+        Set MyForm=Document.frmForm
+        Window.Status="Opening " & MyForm.txtURL.Value & "…"
+        Window.Navigate MyForm.txtURL.Value
+    End Sub
+</SCRIPT>
+
+</HEAD>
+<BODY>
+<CENTER>
+
+<FORM NAME="frmForm">
+<INPUT TYPE="TEXT" NAME="txtURL" VALUE="Enter URL">
+<INPUT TYPE="BUTTON" VALUE="Navigate" NAME="cmdNavigate">
+</FORM>
+
+</CENTER>
+</BODY>
+</HTML> 

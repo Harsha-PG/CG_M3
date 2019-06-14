@@ -1,0 +1,28 @@
+<html>
+<body>
+<script language="vbscript" type="text/vbscript">
+Dim objConn,
+Const adStateOpen = 1
+
+Set objConn = CreateObject ("ADODB.Connection")
+'using DSN
+objConn.Open "VBSCourse"
+If Not objConn.State = adStateOpen Then Exit
+
+strSQL = "Select * From Employees Where State=‘NY’"
+Set objRst = objConn.Execute(strSQL)
+'instead of the above one line we can also write the below two lines
+'Set objRst = CreateObject("ADODB.Recordset")
+'objRst.Open strSQL, objConn
+While Not objRst.EOF
+	iCounter = iCounter + 1
+	strRep = "First Name : " & objRst("EmpFirstName").Value & vbCr
+	strRep = strRep  & "Last Name : " & objRst("EmpLastName").Value & vbCr
+	strRep = strRep  & "Address: " & objRst("EmpAddress").Value & vbCr
+	MsgBox strRep,0,"Employee " & iCounter
+	objRst.MoveNext
+Loop
+
+</script>
+</body>
+</html>

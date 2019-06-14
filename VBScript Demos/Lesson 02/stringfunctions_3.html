@@ -1,0 +1,46 @@
+<html>
+<body>
+<script language="vbscript" type="text/vbscript">
+
+txt="Lets go out today!"
+document.write("<b>Right Funtion on the below line</b> <br/>")
+document.write("<b>"& txt &"<br/>")
+document.write(Right(txt,10))
+
+Dim txt1
+txt1=Space(4)
+document.write("<br/><br/><b>Space Funtion</b> <br/>")
+document.write(txt1)
+
+wrd1="VBScript"
+wrd2="VBScript"
+document.write("<br/><br/><b>StrComp Funtion on the below words</b> <br/>")
+document.write("<b>"& wrd1 &" "& wrd2 &"<br/>")
+document.write(StrComp("VBScript","VBScript")&"<br/>")
+
+wrd1="VBScript"
+wrd2="vbscript"
+document.write("<b>"& wrd1 &" "& wrd2 &"<br/>")
+document.write(StrComp("VBScript","vbscript")&"<br/>")
+
+
+document.write("<br/><br/><b>String Funtion</b> <br/>")
+document.write(String(10,"#"))
+
+
+txt="Lets go out today!"
+document.write("<br/><br/><b>String Reverse Funtion on the below line</b> <br/>")
+document.write("<b>"& txt &"<br/>")
+document.write(StrReverse(txt))
+
+
+document.write("<br/><br/><b>UCase Funtion on the below line</b> <br/>")
+document.write("<b>"& txt &"<br/>")
+document.write(UCase(txt))
+
+
+</script>
+</body>
+</html>
+
+

@@ -1,0 +1,49 @@
+<html>
+<head>
+<meta http-equiv="x-ua-compatible" content="IE=10">
+</head>
+<body>
+<script language="vbscript" type="text/vbscript">
+document.write("<b>Example showing Array Functions</b><br> <br>")
+num=Array(5,10,15,20)
+document.write("<b>Array Function showing 4th and first element from the array 5,10,15,20</b> <br/>")
+document.write(num(3)&"<br/>")
+document.write(num(0))
+
+
+document.write("<br/><br/><b>Filter Function displaying only Weekdays with 'S' character</b> <br/>")
+weekday=Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday")
+filterweekday=Filter(weekday,"S")
+for each x in filterweekday
+    document.write(x & "<br />")
+next
+
+days=Array("Sun","Mon","Tue","Wed","Thu","Fri","Sat")
+document.write("<br/><br/><b>IsArray Function</b> <br/>")
+document.write(IsArray(days))
+
+
+document.write("<br/><br/><b>Join Funtion with different delimiters</b> <br/>")
+document.write(Join(days) & "<br />")
+document.write(Join(days,",") & "<br />")
+document.write(Join(days," ### "))
+
+
+document.write("<br/><br/><b>LBound and UBound Function on an array of the weekdays</b> <br/>")
+document.write(LBound(days) & "<br />")
+document.write(UBound(days) & "<br />")
+
+
+document.write("<br/><br/><b>Split Function on the below line</b> <br/>")
+document.write("<b>Experiementing in VBScript is fun.</b><br/>")
+statement=Split("Experiementing in VBScript is fun.")
+for each x in statement
+    document.write(x & "<br />")
+next
+
+
+</script>
+</body>
+</html>
+
+

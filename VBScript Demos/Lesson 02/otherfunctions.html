@@ -1,0 +1,52 @@
+<html>
+<body>
+<script language="vbscript" type="text/vbscript">
+
+function myFunction()
+document.write("Hello world")
+end function
+document.write("<b>Eval Function </b> <br/>")
+eval("myFunction()")
+
+
+document.write("<br/><br/><b>IsEmpty Function</b> <br/>")
+Dim x
+document.write(x &":" &IsEmpty(x) & "<br />")
+x=10
+document.write(x &": " &IsEmpty(x) & "<br />")
+x=Empty
+document.write(x &": "&IsEmpty(x) & "<br />")
+x=Null
+document.write(x &": "&IsEmpty(x))
+
+
+
+document.write("<br/><br/><b>IsNull Function</b> <br/>")
+Dim n
+document.write(n &":" &IsNull(n) & "<br />")
+n=10
+document.write(n &": " &IsNull(n) & "<br />")
+n=Empty
+document.write(n &": "&IsNull(n) & "<br />")
+n=Null
+document.write(n &": "&IsNull(n))
+
+
+
+
+document.write("<br/><br/><b>IsNumeric Function</b> <br/>")
+Dim nu
+document.write(nu &":" &IsNumeric(nu) & "<br />")
+nu=10
+document.write(nu &": " &IsNumeric(nu) & "<br />")
+nu=Empty
+document.write(nu &": "&IsNumeric(nu) & "<br />")
+nu=Null
+document.write(nu &": "&IsNumeric(nu))
+
+
+</script>
+</body>
+</html>
+
+

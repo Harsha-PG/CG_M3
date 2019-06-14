@@ -1,0 +1,28 @@
+<HTML>
+<HEAD>
+<TITLE>Forms and Elements</TITLE>
+<SCRIPT LANGUAGE="VBScript">
+
+    Sub cmdChange_OnClick
+	msgbox "Hello"
+	For i=0 To Document.frmForm.Elements.length-1
+            Document.frmForm.Elements(i).Value="Changed!"
+        Next
+    End Sub
+</SCRIPT>
+
+</HEAD>
+<BODY>
+<CENTER>
+
+<FORM NAME="frmForm">
+<INPUT TYPE="TEXT"><P>
+<INPUT TYPE="TEXT"><P>
+<INPUT TYPE="TEXT"><P>
+<INPUT TYPE="TEXT"><P>
+<INPUT TYPE="TEXT"><P>
+<INPUT TYPE="BUTTON" NAME="cmdChange" VALUE="Push and Watch the Controls!"><P>
+</FORM>
+
+</CENTER>
+</HTML> 
